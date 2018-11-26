@@ -28,6 +28,7 @@ Partial Class SelectPowerWindow
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -63,11 +64,12 @@ Partial Class SelectPowerWindow
         '
         'Panel2
         '
+        Me.Panel2.Controls.Add(Me.Button2)
         Me.Panel2.Controls.Add(Me.Button1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel2.Location = New System.Drawing.Point(266, 687)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(870, 36)
+        Me.Panel2.Size = New System.Drawing.Size(360, 36)
         Me.Panel2.TabIndex = 1
         '
         'Button1
@@ -75,7 +77,7 @@ Partial Class SelectPowerWindow
         Me.Button1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Button1.Location = New System.Drawing.Point(0, 0)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(164, 36)
+        Me.Button1.Size = New System.Drawing.Size(157, 36)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
@@ -86,15 +88,25 @@ Partial Class SelectPowerWindow
         Me.RichTextBox1.Location = New System.Drawing.Point(266, 0)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.ReadOnly = True
-        Me.RichTextBox1.Size = New System.Drawing.Size(870, 687)
+        Me.RichTextBox1.Size = New System.Drawing.Size(360, 687)
         Me.RichTextBox1.TabIndex = 2
         Me.RichTextBox1.Text = ""
+        '
+        'Button2
+        '
+        Me.Button2.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button2.Location = New System.Drawing.Point(214, 0)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(146, 36)
+        Me.Button2.TabIndex = 1
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'SelectPowerWindow
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1136, 723)
+        Me.ClientSize = New System.Drawing.Size(626, 723)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
@@ -112,4 +124,5 @@ Partial Class SelectPowerWindow
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Button1 As Button
     Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents Button2 As Button
 End Class

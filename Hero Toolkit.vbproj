@@ -73,7 +73,14 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Condition.vb" />
+    <Compile Include="NewHero.Designer.vb">
+      <DependentUpon>NewHero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewHero.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hero.vb" />
+    <Compile Include="Conditions.vb" />
     <Compile Include="Main.Designer.vb">
       <DependentUpon>Main.vb</DependentUpon>
     </Compile>
@@ -104,6 +111,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="NewHero.resx">
+      <DependentUpon>NewHero.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
     </EmbeddedResource>

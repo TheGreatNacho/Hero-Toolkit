@@ -15,6 +15,9 @@ Public Class Main
             powers.Add(LoadPower)
         Next
     End Sub
+    Private Sub NewHero()
+
+    End Sub
 
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
         Close()
@@ -27,5 +30,13 @@ Public Class Main
 
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadPowers()
+    End Sub
+
+    Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
+        BootTool.Visible = False
+    End Sub
+
+    Private Sub FromScratchToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FromScratchToolStripMenuItem.Click
+
     End Sub
 End Class
