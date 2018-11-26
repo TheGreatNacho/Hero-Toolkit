@@ -1,0 +1,621 @@
+<Powers>
+	<Power>
+		<Name>Affliction</Name>
+		<Type>Attack</Type>
+		<Action>Standard</Action>
+		<Range>Close</Range>
+		<Duration>Instant</Duration>
+		<Resistance>Fort/Will</Resistance>
+		<Cost>1 per rank</Cost>
+		<Description>
+      You can impose some debilitating condition or conditions on a target by making a close attack. You set the conditions your Affliction causes at each degree when you acquire it and they may not be changed. Higher degree conditions replace lower degree conditions and do not stack with them.  The target resists with Fortitude or Will defense (chosen when you take the effect)
+    </Description>
+    <Failure>
+      <One>
+        <Condition>Dazed</Condition>
+      </One>
+      <Two></Two>
+      <Three></Three>
+    </Failure>
+	</Power>
+	<Power>
+		<Name>Alternate Form</Name>
+		<Type>Varies</Type>
+		<Action>Varies</Action>
+		<Range>Varies</Range>
+		<Duration>Varies</Duration>
+		<Resistance></Resistance>
+		<Cost>See description</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Blast</Name>
+		<Type>Attack</Type>
+		<Action>Standard</Action>
+		<Range>Ranged</Range>
+		<Duration>Instant</Duration>
+		<Resistance>Toughness</Resistance>
+		<Cost>2 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Burrowing</Name>
+		<Type>Movement</Type>
+		<Action>Free</Action>
+		<Range>Personal</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>1 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Communication</Name>
+		<Type>Sensory</Type>
+		<Action>Free</Action>
+		<Range>Rank</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>4 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Comprehend</Name>
+		<Type>Sensory</Type>
+		<Action>None</Action>
+		<Range>Personal</Range>
+		<Duration>Permanent</Duration>
+		<Resistance></Resistance>
+		<Cost>2 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Concealment</Name>
+		<Type>Sensory</Type>
+		<Action>Free</Action>
+		<Range>Personal</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>2 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Create</Name>
+		<Type>Control</Type>
+		<Action>Standard</Action>
+		<Range>Ranged</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>2 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Damage</Name>
+		<Type>Attack</Type>
+		<Action>Standard</Action>
+		<Range>Close</Range>
+		<Duration>Instant</Duration>
+		<Resistance>Toughness</Resistance>
+		<Cost>1 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Dazzle</Name>
+		<Type>Attack</Type>
+		<Action>Standard</Action>
+		<Range>Ranged</Range>
+		<Duration>Instant</Duration>
+		<Resistance>Fort/Will</Resistance>
+		<Cost>2 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Deflect</Name>
+		<Type>Defense</Type>
+		<Action>Standard</Action>
+		<Range>Ranged</Range>
+		<Duration>Instant</Duration>
+		<Resistance></Resistance>
+		<Cost>1 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Duplication</Name>
+		<Type>Control</Type>
+		<Action>Standard</Action>
+		<Range>Close</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>3per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Element Control</Name>
+		<Type>Control</Type>
+		<Action>Standard</Action>
+		<Range>Perception</Range>
+		<Duration>Sustained</Duration>
+		<Resistance>Strength</Resistance>
+		<Cost>2 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Elongation</Name>
+		<Type>General</Type>
+		<Action>Free</Action>
+		<Range>Personal</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>1 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Energy Absorption</Name>
+		<Type>General</Type>
+		<Action>Free</Action>
+		<Range>Personal</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>See description</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Energy Aura</Name>
+		<Type>Attack</Type>
+		<Action>Reaction</Action>
+		<Range>Close</Range>
+		<Duration>Instant</Duration>
+		<Resistance>Toughness</Resistance>
+		<Cost>4 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Energy Control</Name>
+		<Type>Attack</Type>
+		<Action>Standard</Action>
+		<Range>Ranged</Range>
+		<Duration>Instant</Duration>
+		<Resistance>Toughness</Resistance>
+		<Cost>2 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Enhanced Trait</Name>
+		<Type>General</Type>
+		<Action>Free</Action>
+		<Range>Personal</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>As base trait</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Environment</Name>
+		<Type>Control</Type>
+		<Action>Standard</Action>
+		<Range>Rank</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>1-2 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Extra Limbs</Name>
+		<Type>General</Type>
+		<Action>None</Action>
+		<Range>Personal</Range>
+		<Duration>Permanent</Duration>
+		<Resistance></Resistance>
+		<Cost>1 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Feature</Name>
+		<Type>General</Type>
+		<Action>None</Action>
+		<Range>Personal</Range>
+		<Duration>Permanent</Duration>
+		<Resistance></Resistance>
+		<Cost>1 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Flight</Name>
+		<Type>Movement</Type>
+		<Action>Free</Action>
+		<Range>Personal</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>2 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Force Field</Name>
+		<Type>Defense</Type>
+		<Action>Free</Action>
+		<Range>Personal</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>1per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Growth</Name>
+		<Type>General</Type>
+		<Action>Free</Action>
+		<Range>Personal</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>2 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Healing</Name>
+		<Type>General</Type>
+		<Action>Standard</Action>
+		<Range>Close</Range>
+		<Duration>Instant</Duration>
+		<Resistance></Resistance>
+		<Cost>2 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Illusion</Name>
+		<Type>Control</Type>
+		<Action>Standard</Action>
+		<Range>Perception</Range>
+		<Duration>Sustained</Duration>
+		<Resistance>Awareness</Resistance>
+		<Cost>1-5 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Immortality</Name>
+		<Type>Defense</Type>
+		<Action>None</Action>
+		<Range>Personal</Range>
+		<Duration>Permanent</Duration>
+		<Resistance></Resistance>
+		<Cost>2 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Immunity</Name>
+		<Type>Defense</Type>
+		<Action>None</Action>
+		<Range>Personal</Range>
+		<Duration>Permanent</Duration>
+		<Resistance></Resistance>
+		<Cost>1 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Insubstantial</Name>
+		<Type>General</Type>
+		<Action>Free</Action>
+		<Range>Personal</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>5 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Invisibility</Name>
+		<Type>Sensory</Type>
+		<Action>Free</Action>
+		<Range>Personal</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>4or 8 points</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Leaping</Name>
+		<Type>Movement</Type>
+		<Action>Free</Action>
+		<Range>Personal</Range>
+		<Duration>Instant</Duration>
+		<Resistance></Resistance>
+		<Cost>1 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Luck Control</Name>
+		<Type>Control</Type>
+		<Action>Reaction</Action>
+		<Range>Perception</Range>
+		<Duration>Instant</Duration>
+		<Resistance></Resistance>
+		<Cost>3 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Magic</Name>
+		<Type>Attack</Type>
+		<Action>Standard</Action>
+		<Range>Ranged</Range>
+		<Duration>Instant</Duration>
+		<Resistance>Toughness</Resistance>
+		<Cost>2 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Mental Blast</Name>
+		<Type>Attack</Type>
+		<Action>Standard</Action>
+		<Range>Perception</Range>
+		<Duration>Instant</Duration>
+		<Resistance>Will</Resistance>
+		<Cost>4 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Mimic</Name>
+		<Type>General</Type>
+		<Action>Move</Action>
+		<Range>Personal</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>8per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Mind Control</Name>
+		<Type>Attack</Type>
+		<Action>Standard</Action>
+		<Range>Perception</Range>
+		<Duration>Instant</Duration>
+		<Resistance>Will</Resistance>
+		<Cost>4 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Mind Reading</Name>
+		<Type>Sensory</Type>
+		<Action>Standard</Action>
+		<Range>Perception</Range>
+		<Duration>Sustained</Duration>
+		<Resistance>Will</Resistance>
+		<Cost>2 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Morph</Name>
+		<Type>General</Type>
+		<Action>Free</Action>
+		<Range>Personal</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>5 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Move Object</Name>
+		<Type>Control</Type>
+		<Action>Standard</Action>
+		<Range>Ranged</Range>
+		<Duration>Sustained</Duration>
+		<Resistance>Strength</Resistance>
+		<Cost>2 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Movement</Name>
+		<Type>Movement</Type>
+		<Action>Free</Action>
+		<Range>Personal</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>2 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Nullify</Name>
+		<Type>Attack</Type>
+		<Action>Standard</Action>
+		<Range>Ranged</Range>
+		<Duration>Instant</Duration>
+		<Resistance>Rank/Will</Resistance>
+		<Cost>1 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Power-Lifting</Name>
+		<Type>General</Type>
+		<Action>Free</Action>
+		<Range>Personal</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>1per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Protection</Name>
+		<Type>Defense</Type>
+		<Action>None</Action>
+		<Range>Personal</Range>
+		<Duration>Permanent</Duration>
+		<Resistance></Resistance>
+		<Cost>1 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Quickness</Name>
+		<Type>General</Type>
+		<Action>Free</Action>
+		<Range>Personal</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>1 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Regeneration</Name>
+		<Type>Defense</Type>
+		<Action>None</Action>
+		<Range>Personal</Range>
+		<Duration>Permanent</Duration>
+		<Resistance></Resistance>
+		<Cost>1 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Remote Sensing</Name>
+		<Type>Sensory</Type>
+		<Action>Free</Action>
+		<Range>Rank</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>1-5 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Senses</Name>
+		<Type>Sensory</Type>
+		<Action>None</Action>
+		<Range>Personal</Range>
+		<Duration>Permanent</Duration>
+		<Resistance></Resistance>
+		<Cost>1 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Shapeshift</Name>
+		<Type>General</Type>
+		<Action>Move</Action>
+		<Range>Personal</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>8per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Shrinking</Name>
+		<Type>General</Type>
+		<Action>Free</Action>
+		<Range>Personal</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>2 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Sleep</Name>
+		<Type>Attack</Type>
+		<Action>Standard</Action>
+		<Range>Ranged</Range>
+		<Duration>Instant</Duration>
+		<Resistance>Fortitude</Resistance>
+		<Cost>2 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Snare</Name>
+		<Type>Attack</Type>
+		<Action>Standard</Action>
+		<Range>Ranged</Range>
+		<Duration>Instant</Duration>
+		<Resistance>Dodge</Resistance>
+		<Cost>3 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Speed</Name>
+		<Type>Movement</Type>
+		<Action>Free</Action>
+		<Range>Personal</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>1 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Strike</Name>
+		<Type>Attack</Type>
+		<Action>Standard</Action>
+		<Range>Close</Range>
+		<Duration>Instant</Duration>
+		<Resistance>Toughness</Resistance>
+		<Cost>1 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Suffocation</Name>
+		<Type>Attack</Type>
+		<Action>Standard</Action>
+		<Range>Ranged</Range>
+		<Duration>Instant</Duration>
+		<Resistance>Fortitude</Resistance>
+		<Cost>4 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Summon</Name>
+		<Type>Control</Type>
+		<Action>Standard</Action>
+		<Range>Close</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>2 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Super-Speed</Name>
+		<Type>See description</Type>
+		<Action>Free</Action>
+		<Range>Personal</Range>
+		<Duration>See description</Duration>
+		<Resistance></Resistance>
+		<Cost>3per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Swimming</Name>
+		<Type>Movement</Type>
+		<Action>Free</Action>
+		<Range>Personal</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>1 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Teleport</Name>
+		<Type>Movement</Type>
+		<Action>Move</Action>
+		<Range>Rank</Range>
+		<Duration>Instant</Duration>
+		<Resistance></Resistance>
+		<Cost>2 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Transform</Name>
+		<Type>Control</Type>
+		<Action>Standard</Action>
+		<Range>Close</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>2-5 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Variable</Name>
+		<Type>General</Type>
+		<Action>Standard</Action>
+		<Range>Personal</Range>
+		<Duration>Sustained</Duration>
+		<Resistance></Resistance>
+		<Cost>7 per rank</Cost>
+		<Description></Description>
+	</Power>
+	<Power>
+		<Name>Weaken</Name>
+		<Type>Attack</Type>
+		<Action>Standard</Action>
+		<Range>Close</Range>
+		<Duration>Instant</Duration>
+		<Resistance>Fort/Will</Resistance>
+		<Cost>1 per rank</Cost>
+		<Description></Description>
+	</Power>
+</Powers>

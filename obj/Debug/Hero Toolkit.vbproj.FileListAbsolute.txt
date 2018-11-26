@@ -1,0 +1,13 @@
+C:\Users\TheGreatNacho\source\repos\Hero Toolkit\bin\Debug\Hero Toolkit.exe.config
+C:\Users\TheGreatNacho\source\repos\Hero Toolkit\bin\Debug\Hero Toolkit.exe
+C:\Users\TheGreatNacho\source\repos\Hero Toolkit\bin\Debug\Hero Toolkit.pdb
+C:\Users\TheGreatNacho\source\repos\Hero Toolkit\bin\Debug\Hero Toolkit.xml
+C:\Users\TheGreatNacho\source\repos\Hero Toolkit\obj\Debug\Hero Toolkit.vbprojAssemblyReference.cache
+C:\Users\TheGreatNacho\source\repos\Hero Toolkit\obj\Debug\Hero_Toolkit.Main.resources
+C:\Users\TheGreatNacho\source\repos\Hero Toolkit\obj\Debug\Hero_Toolkit.Resources.resources
+C:\Users\TheGreatNacho\source\repos\Hero Toolkit\obj\Debug\Hero Toolkit.vbproj.GenerateResource.cache
+C:\Users\TheGreatNacho\source\repos\Hero Toolkit\obj\Debug\Hero Toolkit.vbproj.CoreCompileInputs.cache
+C:\Users\TheGreatNacho\source\repos\Hero Toolkit\obj\Debug\Hero Toolkit.exe
+C:\Users\TheGreatNacho\source\repos\Hero Toolkit\obj\Debug\Hero Toolkit.xml
+C:\Users\TheGreatNacho\source\repos\Hero Toolkit\obj\Debug\Hero Toolkit.pdb
+C:\Users\TheGreatNacho\source\repos\Hero Toolkit\obj\Debug\Hero_Toolkit.SelectPowerWindow.resources
