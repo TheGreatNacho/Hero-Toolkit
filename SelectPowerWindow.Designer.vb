@@ -75,7 +75,7 @@ Partial Class SelectPowerWindow
         Me.Button1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Button1.Location = New System.Drawing.Point(0, 0)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 36)
+        Me.Button1.Size = New System.Drawing.Size(164, 36)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True

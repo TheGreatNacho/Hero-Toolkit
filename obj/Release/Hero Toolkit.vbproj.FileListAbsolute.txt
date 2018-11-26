@@ -11,3 +11,16 @@ C:\Users\TheGreatNacho\source\repos\Hero Toolkit\obj\Release\Hero Toolkit.exe
 C:\Users\TheGreatNacho\source\repos\Hero Toolkit\obj\Release\Hero Toolkit.xml
 C:\Users\TheGreatNacho\source\repos\Hero Toolkit\obj\Release\Hero Toolkit.pdb
 C:\Users\TheGreatNacho\source\repos\Hero Toolkit\obj\Release\Hero Toolkit.vbprojAssemblyReference.cache
+C:\Users\TheGreatNacho\source\repos\Hero-Toolkit\bin\Release\Hero Toolkit.exe.config
+C:\Users\TheGreatNacho\source\repos\Hero-Toolkit\bin\Release\Hero Toolkit.exe
+C:\Users\TheGreatNacho\source\repos\Hero-Toolkit\bin\Release\Hero Toolkit.pdb
+C:\Users\TheGreatNacho\source\repos\Hero-Toolkit\bin\Release\Hero Toolkit.xml
+C:\Users\TheGreatNacho\source\repos\Hero-Toolkit\obj\Release\Hero Toolkit.vbprojAssemblyReference.cache
+C:\Users\TheGreatNacho\source\repos\Hero-Toolkit\obj\Release\Hero_Toolkit.Main.resources
+C:\Users\TheGreatNacho\source\repos\Hero-Toolkit\obj\Release\Hero_Toolkit.Resources.resources
+C:\Users\TheGreatNacho\source\repos\Hero-Toolkit\obj\Release\Hero_Toolkit.SelectPowerWindow.resources
+C:\Users\TheGreatNacho\source\repos\Hero-Toolkit\obj\Release\Hero Toolkit.vbproj.GenerateResource.cache
+C:\Users\TheGreatNacho\source\repos\Hero-Toolkit\obj\Release\Hero Toolkit.vbproj.CoreCompileInputs.cache
+C:\Users\TheGreatNacho\source\repos\Hero-Toolkit\obj\Release\Hero Toolkit.exe
+C:\Users\TheGreatNacho\source\repos\Hero-Toolkit\obj\Release\Hero Toolkit.xml
+C:\Users\TheGreatNacho\source\repos\Hero-Toolkit\obj\Release\Hero Toolkit.pdb
