@@ -37,9 +37,8 @@
     Private PowerRange As Range
     Private PowerDuration As Duration
     Public Description As String
-    Public CostMin As Integer
-    Public CostMax As Integer
-    Private Ranks As Integer
+    Public Cost As Integer
+    Public Ranks As Integer
 
     Public ResistFort As Boolean = False
     Public ResistWill As Boolean = False
@@ -82,4 +81,5 @@
             PowerDuration = Duration.Other
         End Try
     End Sub
+
 End Class
