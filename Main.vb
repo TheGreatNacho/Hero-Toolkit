@@ -1,4 +1,6 @@
 ﻿Imports System.Xml
+Imports System.IO
+
 Public Class Main
     Public WorkingHero As New Hero
     Public powers As New List(Of Power)
@@ -102,8 +104,8 @@ Public Class Main
         WorkingHero.UpdatePoints()
     End Sub
 
-    Private Sub PresencesNumBox_ValueChanged(sender As Object, e As EventArgs) Handles PresencesNumBox.ValueChanged
-        WorkingHero.PresenceRanks = PresencesNumBox.Value
+    Private Sub PresencesNumBox_ValueChanged(sender As Object, e As EventArgs) Handles PresenceNumBox.ValueChanged
+        WorkingHero.PresenceRanks = PresenceNumBox.Value
         WorkingHero.UpdatePoints()
     End Sub
 
@@ -187,7 +189,7 @@ Public Class Main
     End Sub
 
     Private Sub IntiNumBox_ValueChanged(sender As Object, e As EventArgs) Handles IntiNumBox.ValueChanged
-        WorkingHero.IntellectRanks = IntellectNumBox.Value
+        WorkingHero.IntimidationRanks = IntiNumBox.Value
         WorkingHero.UpdatePoints()
     End Sub
 
@@ -244,5 +246,123 @@ Public Class Main
     Private Sub VehNumBox_ValueChanged(sender As Object, e As EventArgs) Handles VehNumBox.ValueChanged
         WorkingHero.VehicleRanks = VehNumBox.Value
         WorkingHero.UpdatePoints()
+    End Sub
+
+    Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
+        SaveHeroDialog.Filter = "Hero File|*.hero"
+        SaveHeroDialog.Title = "Save Hero"
+        SaveHeroDialog.ShowDialog()
+    End Sub
+
+    Private Sub SaveHeroDialog_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles SaveHeroDialog.FileOk
+        Dim fs As New FileStream(SaveHeroDialog.FileName, FileMode.OpenOrCreate)
+        Dim bw As New BinaryWriter(fs)
+
+        bw.Write(WorkingHero.Age)
+        bw.Write(WorkingHero.NPC)
+        bw.Write(WorkingHero.Eyes)
+        bw.Write(WorkingHero.Hair)
+        bw.Write(WorkingHero.Name)
+        'bw.Write(WorkingHero.Type)
+        bw.Write(WorkingHero.Player)
+        bw.Write(WorkingHero.Gender)
+        bw.Write(WorkingHero.Height)
+        bw.Write(WorkingHero.Weight)
+        bw.Write(WorkingHero.Identity)
+        bw.Write(WorkingHero.Secret)
+        bw.Write(WorkingHero.GroupAffiliation)
+        bw.Write(WorkingHero.BaseOfOpperations)
+
+        'Power Points
+        bw.Write(WorkingHero.PowerLevel)
+        bw.Write(WorkingHero.PowerPoints)
+        bw.Write(WorkingHero.PowerPointPerLevel)
+        bw.Write(WorkingHero.AbilityRanks)
+        bw.Write(WorkingHero.PowerRanks)
+        bw.Write(WorkingHero.SkillRanks)
+        bw.Write(WorkingHero.AdvantageRanks)
+        bw.Write(WorkingHero.DefenceRanks)
+        bw.Write(WorkingHero.TotalPowerPoints)
+
+        'Abilitiees
+        bw.Write(WorkingHero.StrengthRanks)
+        bw.Write(WorkingHero.StrengthMisc)
+        bw.Write(WorkingHero.AgilityRanks)
+        bw.Write(WorkingHero.AgilityMisc)
+        bw.Write(WorkingHero.FightingRanks)
+        bw.Write(WorkingHero.FightingMisc)
+        bw.Write(WorkingHero.AwarenessRanks)
+        bw.Write(WorkingHero.AwarenessMisc)
+        bw.Write(WorkingHero.StaminaRanks)
+        bw.Write(WorkingHero.StaminaMisc)
+        bw.Write(WorkingHero.DexterityRanks)
+        bw.Write(WorkingHero.DexterityMisc)
+        bw.Write(WorkingHero.IntellectRanks)
+        bw.Write(WorkingHero.IntellectMisc)
+        bw.Write(WorkingHero.PresenceRanks)
+        bw.Write(WorkingHero.PresenceMisc)
+
+        'Defence
+        bw.Write(WorkingHero.DodgeRanks)
+        bw.Write(WorkingHero.DodgeMisc)
+        bw.Write(WorkingHero.ParryRanks)
+        bw.Write(WorkingHero.ParryMisc)
+        bw.Write(WorkingHero.FortitudeRanks)
+        bw.Write(WorkingHero.FortitudeMisc)
+        bw.Write(WorkingHero.ToughnessRanks)
+        bw.Write(WorkingHero.ToughnessMisc)
+        bw.Write(WorkingHero.WillRanks)
+        bw.Write(WorkingHero.WillMisc)
+
+        'Skills
+        bw.Write(WorkingHero.AcrobaticsRanks)
+        bw.Write(WorkingHero.AthleticsRanks)
+        bw.Write(WorkingHero.CloseCombat1Ranks)
+        bw.Write(WorkingHero.CloseCombat2Ranks)
+        bw.Write(WorkingHero.CloseCombat3Ranks)
+        bw.Write(WorkingHero.DeceptionRanks)
+        bw.Write(WorkingHero.Expertise1Ranks)
+        bw.Write(WorkingHero.Expertise2Ranks)
+        bw.Write(WorkingHero.Expertise3Ranks)
+        bw.Write(WorkingHero.Expertise4Ranks)
+        bw.Write(WorkingHero.InsightRanks)
+        bw.Write(WorkingHero.IntimidationRanks)
+        bw.Write(WorkingHero.InvestigationRanks)
+        bw.Write(WorkingHero.PerceptionRanks)
+        bw.Write(WorkingHero.PersuasionRanks)
+        bw.Write(WorkingHero.RangedCombat1Ranks)
+        bw.Write(WorkingHero.RangedCombat2Ranks)
+        bw.Write(WorkingHero.RangedCombat3Ranks)
+        bw.Write(WorkingHero.SlightOfHandRanks)
+        bw.Write(WorkingHero.StealthRanks)
+        bw.Write(WorkingHero.TechnologyRanks)
+        bw.Write(WorkingHero.TreatmentRanks)
+        bw.Write(WorkingHero.VehicleRanks)
+        bw.Write(WorkingHero.AcrobaticsMisc)
+        bw.Write(WorkingHero.AthleticsMisc)
+        bw.Write(WorkingHero.CloseCombat1Misc)
+        bw.Write(WorkingHero.CloseCombat2Misc)
+        bw.Write(WorkingHero.CloseCombat3Misc)
+        bw.Write(WorkingHero.DeceptionMisc)
+        bw.Write(WorkingHero.Expertise1Misc)
+        bw.Write(WorkingHero.Expertise2Misc)
+        bw.Write(WorkingHero.Expertise3Misc)
+        bw.Write(WorkingHero.Expertise4Misc)
+        bw.Write(WorkingHero.InsightMisc)
+        bw.Write(WorkingHero.IntimidationMisc)
+        bw.Write(WorkingHero.InvestigationMisc)
+        bw.Write(WorkingHero.PerceptionMisc)
+        bw.Write(WorkingHero.PersuasionMisc)
+        bw.Write(WorkingHero.RangedCombat1Misc)
+        bw.Write(WorkingHero.RangedCombat2Misc)
+        bw.Write(WorkingHero.RangedCombat3Misc)
+        bw.Write(WorkingHero.SlightOfHandMisc)
+        bw.Write(WorkingHero.StealthMisc)
+        bw.Write(WorkingHero.TechnologyMisc)
+        bw.Write(WorkingHero.TreatmentMisc)
+        bw.Write(WorkingHero.VehicleMisc)
+
+        bw.Close()
+        fs.Close()
     End Sub
 End Class

@@ -78,7 +78,7 @@ Partial Class Main
         Me.FgtLbl = New System.Windows.Forms.Label()
         Me.StrLbl = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.PresencesNumBox = New System.Windows.Forms.NumericUpDown()
+        Me.PresenceNumBox = New System.Windows.Forms.NumericUpDown()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.IntellectNumBox = New System.Windows.Forms.NumericUpDown()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -208,6 +208,7 @@ Partial Class Main
         Me.TabPanel = New System.Windows.Forms.TabControl()
         Me.BootTool = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+        Me.SaveHeroDialog = New System.Windows.Forms.SaveFileDialog()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.PowersTab.SuspendLayout()
@@ -222,7 +223,7 @@ Partial Class Main
         CType(Me.FortitudeNumberBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ParryNumberBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DodgeNumberBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PresencesNumBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PresenceNumBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.IntellectNumBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DexterityNumBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.StaminaNumBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -497,7 +498,7 @@ Partial Class Main
         Me.BasicsSplitcontainer.Panel1.Controls.Add(Me.FgtLbl)
         Me.BasicsSplitcontainer.Panel1.Controls.Add(Me.StrLbl)
         Me.BasicsSplitcontainer.Panel1.Controls.Add(Me.Label7)
-        Me.BasicsSplitcontainer.Panel1.Controls.Add(Me.PresencesNumBox)
+        Me.BasicsSplitcontainer.Panel1.Controls.Add(Me.PresenceNumBox)
         Me.BasicsSplitcontainer.Panel1.Controls.Add(Me.Label8)
         Me.BasicsSplitcontainer.Panel1.Controls.Add(Me.IntellectNumBox)
         Me.BasicsSplitcontainer.Panel1.Controls.Add(Me.Label5)
@@ -810,13 +811,13 @@ Partial Class Main
         Me.Label7.TabIndex = 38
         Me.Label7.Text = "Presence"
         '
-        'PresencesNumBox
+        'PresenceNumBox
         '
-        Me.PresencesNumBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PresencesNumBox.Location = New System.Drawing.Point(478, 302)
-        Me.PresencesNumBox.Name = "PresencesNumBox"
-        Me.PresencesNumBox.Size = New System.Drawing.Size(73, 40)
-        Me.PresencesNumBox.TabIndex = 37
+        Me.PresenceNumBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PresenceNumBox.Location = New System.Drawing.Point(478, 302)
+        Me.PresenceNumBox.Name = "PresenceNumBox"
+        Me.PresenceNumBox.Size = New System.Drawing.Size(73, 40)
+        Me.PresenceNumBox.TabIndex = 37
         '
         'Label8
         '
@@ -2285,6 +2286,10 @@ Partial Class Main
         Me.ToolStripButton1.Size = New System.Drawing.Size(64, 22)
         Me.ToolStripButton1.Text = "New Hero"
         '
+        'SaveHeroDialog
+        '
+        Me.SaveHeroDialog.DefaultExt = "hero"
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2315,7 +2320,7 @@ Partial Class Main
         CType(Me.FortitudeNumberBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ParryNumberBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DodgeNumberBox, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PresencesNumBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PresenceNumBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.IntellectNumBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DexterityNumBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.StaminaNumBox, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2414,7 +2419,7 @@ Partial Class Main
     Friend WithEvents StrengthNumBox As NumericUpDown
     Friend WithEvents Label1 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents PresencesNumBox As NumericUpDown
+    Friend WithEvents PresenceNumBox As NumericUpDown
     Friend WithEvents Label8 As Label
     Friend WithEvents IntellectNumBox As NumericUpDown
     Friend WithEvents Label5 As Label
@@ -2541,4 +2546,5 @@ Partial Class Main
     Friend WithEvents TechNumBox As NumericUpDown
     Friend WithEvents TreNumBox As NumericUpDown
     Friend WithEvents VehNumBox As NumericUpDown
+    Friend WithEvents SaveHeroDialog As SaveFileDialog
 End Class

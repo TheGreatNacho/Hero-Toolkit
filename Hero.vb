@@ -6,109 +6,109 @@
     End Enum
 
     'Basics
-    Public Age As Double
-    Public NPC As Boolean
-    Public Eyes As String
-    Public Hair As String
-    Public Name As String
-    Public Type As HeroType
-    Public Player As String
-    Public Gender As String
-    Public Height As Double
-    Public Weight As Double
-    Public Identity As String
+    Public Age As Double = 0
+    Public NPC As Boolean = 0
+    Public Eyes As String = ""
+    Public Hair As String = ""
+    Public Name As String = ""
+    Public Type As HeroType = HeroType.Normal
+    Public Player As String = ""
+    Public Gender As String = ""
+    Public Height As Double = 0
+    Public Weight As Double = 0
+    Public Identity As String = ""
     Public Secret As Boolean = False
-    Public GroupAffiliation As String
-    Public BaseOfOpperations As String
+    Public GroupAffiliation As String = ""
+    Public BaseOfOpperations As String = ""
 
     'Power Points
-    Public PowerLevel As Integer
-    Public PowerPoints As Double
-    Public PowerPointPerLevel As Integer
-    Public AbilityRanks As Integer
-    Public PowerRanks As Integer
-    Public SkillRanks As Double
-    Public AdvantageRanks As Integer
-    Public DefenceRanks As Integer
-    Public TotalPowerPoints As Double
+    Public PowerLevel As Integer = 10
+    Public PowerPoints As Double = 150
+    Public PowerPointPerLevel As Integer = 15
+    Public AbilityRanks As Integer = 0
+    Public PowerRanks As Integer = 0
+    Public SkillRanks As Double = 0
+    Public AdvantageRanks As Integer = 0
+    Public DefenceRanks As Integer = 0
+    Public TotalPowerPoints As Double = 0
 
     'Abilitiees
-    Public StrengthRanks As Integer
-    Public StrengthMisc As Integer
-    Public AgilityRanks As Integer
-    Public AgilityMisc As Integer
-    Public FightingRanks As Integer
-    Public FightingMisc As Integer
-    Public AwarenessRanks As Integer
-    Public AwarenessMisc As Integer
-    Public StaminaRanks As Integer
-    Public StaminaMisc As Integer
-    Public DexterityRanks As Integer
-    Public DexterityMisc As Integer
-    Public IntellectRanks As Integer
-    Public IntellectMisc As Integer
-    Public PresenceRanks As Integer
-    Public PresenceMisc As Integer
+    Public StrengthRanks As Integer = 0
+    Public StrengthMisc As Integer = 0
+    Public AgilityRanks As Integer = 0
+    Public AgilityMisc As Integer = 0
+    Public FightingRanks As Integer = 0
+    Public FightingMisc As Integer = 0
+    Public AwarenessRanks As Integer = 0
+    Public AwarenessMisc As Integer = 0
+    Public StaminaRanks As Integer = 0
+    Public StaminaMisc As Integer = 0
+    Public DexterityRanks As Integer = 0
+    Public DexterityMisc As Integer = 0
+    Public IntellectRanks As Integer = 0
+    Public IntellectMisc As Integer = 0
+    Public PresenceRanks As Integer = 0
+    Public PresenceMisc As Integer = 0
 
     'Defence
-    Public DodgeRanks As Integer
-    Public DodgeMisc As Integer
-    Public ParryRanks As Integer
-    Public ParryMisc As Integer
-    Public FortitudeRanks As Integer
-    Public FortitudeMisc As Integer
-    Public ToughnessRanks As Integer
-    Public ToughnessMisc As Integer
-    Public WillRanks As Integer
-    Public WillMisc As Integer
+    Public DodgeRanks As Integer = 0
+    Public DodgeMisc As Integer = 0
+    Public ParryRanks As Integer = 0
+    Public ParryMisc As Integer = 0
+    Public FortitudeRanks As Integer = 0
+    Public FortitudeMisc As Integer = 0
+    Public ToughnessRanks As Integer = 0
+    Public ToughnessMisc As Integer = 0
+    Public WillRanks As Integer = 0
+    Public WillMisc As Integer = 0
 
     'Skills
-    Public AcrobaticsRanks As Integer
-    Public AthleticsRanks As Integer
-    Public CloseCombat1Ranks As Integer
-    Public CloseCombat2Ranks As Integer
-    Public CloseCombat3Ranks As Integer
-    Public DeceptionRanks As Integer
-    Public Expertise1Ranks As Integer
-    Public Expertise2Ranks As Integer
-    Public Expertise3Ranks As Integer
-    Public Expertise4Ranks As Integer
-    Public InsightRanks As Integer
-    Public IntimidationRanks As Integer
-    Public InvestigationRanks As Integer
-    Public PerceptionRanks As Integer
-    Public PersuasionRanks As Integer
-    Public RangedCombat1Ranks As Integer
-    Public RangedCombat2Ranks As Integer
-    Public RangedCombat3Ranks As Integer
-    Public SlightOfHandRanks As Integer
-    Public StealthRanks As Integer
-    Public TechnologyRanks As Integer
-    Public TreatmentRanks As Integer
-    Public VehicleRanks As Integer
-    Public AcrobaticsMisc As Integer
-    Public AthleticsMisc As Integer
-    Public CloseCombat1Misc As Integer
-    Public CloseCombat2Misc As Integer
-    Public CloseCombat3Misc As Integer
-    Public DeceptionMisc As Integer
-    Public Expertise1Misc As Integer
-    Public Expertise2Misc As Integer
-    Public Expertise3Misc As Integer
-    Public Expertise4Misc As Integer
-    Public InsightMisc As Integer
-    Public IntimidationMisc As Integer
-    Public InvestigationMisc As Integer
-    Public PerceptionMisc As Integer
-    Public PersuasionMisc As Integer
-    Public RangedCombat1Misc As Integer
-    Public RangedCombat2Misc As Integer
-    Public RangedCombat3Misc As Integer
-    Public SlightOfHandMisc As Integer
-    Public StealthMisc As Integer
-    Public TechnologyMisc As Integer
-    Public TreatmentMisc As Integer
-    Public VehicleMisc As Integer
+    Public AcrobaticsRanks As Integer = 0
+    Public AthleticsRanks As Integer = 0
+    Public CloseCombat1Ranks As Integer = 0
+    Public CloseCombat2Ranks As Integer = 0
+    Public CloseCombat3Ranks As Integer = 0
+    Public DeceptionRanks As Integer = 0
+    Public Expertise1Ranks As Integer = 0
+    Public Expertise2Ranks As Integer = 0
+    Public Expertise3Ranks As Integer = 0
+    Public Expertise4Ranks As Integer = 0
+    Public InsightRanks As Integer = 0
+    Public IntimidationRanks As Integer = 0
+    Public InvestigationRanks As Integer = 0
+    Public PerceptionRanks As Integer = 0
+    Public PersuasionRanks As Integer = 0
+    Public RangedCombat1Ranks As Integer = 0
+    Public RangedCombat2Ranks As Integer = 0
+    Public RangedCombat3Ranks As Integer = 0
+    Public SlightOfHandRanks As Integer = 0
+    Public StealthRanks As Integer = 0
+    Public TechnologyRanks As Integer = 0
+    Public TreatmentRanks As Integer = 0
+    Public VehicleRanks As Integer = 0
+    Public AcrobaticsMisc As Integer = 0
+    Public AthleticsMisc As Integer = 0
+    Public CloseCombat1Misc As Integer = 0
+    Public CloseCombat2Misc As Integer = 0
+    Public CloseCombat3Misc As Integer = 0
+    Public DeceptionMisc As Integer = 0
+    Public Expertise1Misc As Integer = 0
+    Public Expertise2Misc As Integer = 0
+    Public Expertise3Misc As Integer = 0
+    Public Expertise4Misc As Integer = 0
+    Public InsightMisc As Integer = 0
+    Public IntimidationMisc As Integer = 0
+    Public InvestigationMisc As Integer = 0
+    Public PerceptionMisc As Integer = 0
+    Public PersuasionMisc As Integer = 0
+    Public RangedCombat1Misc As Integer = 0
+    Public RangedCombat2Misc As Integer = 0
+    Public RangedCombat3Misc As Integer = 0
+    Public SlightOfHandMisc As Integer = 0
+    Public StealthMisc As Integer = 0
+    Public TechnologyMisc As Integer = 0
+    Public TreatmentMisc As Integer = 0
+    Public VehicleMisc As Integer = 0
 
     Public Powers As New List(Of Power)
 
@@ -296,7 +296,7 @@
         Main.Exp3Lbl.Text = CStr(GetExpertise3())
         Main.Exp4Lbl.Text = CStr(GetExpertise4())
         Main.InsLbl.Text = CStr(GetInsight())
-        Main.IntLbl.Text = CStr(GetIntimidation())
+        Main.IntiLbl.Text = CStr(GetIntimidation())
         Main.InvLbl.Text = CStr(GetInvestigation())
         Main.PercLbl.Text = CStr(GetPerception())
         Main.Perslbl.Text = CStr(GetPersuasion())
@@ -308,6 +308,5 @@
         Main.TechLbl.Text = CStr(GetTechnology())
         Main.TreLbl.Text = CStr(GetTreatment())
         Main.VehLbl.Text = CStr(GetVehicle())
-
     End Sub
 End Class
