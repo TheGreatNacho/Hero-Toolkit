@@ -5,38 +5,38 @@
 		<Action>Standard</Action>
 		<Range>Close</Range>
 		<Duration>Instant</Duration>
-		<Resistance>Fort/Will</Resistance>
-		<Cost>1</Cost>
-		<Description>
-      You can impose some debilitating condition or conditions on a target by making a close attack. You set the conditions your Affliction causes at each degree when you acquire it and they may not be changed. Higher degree conditions replace lower degree conditions and do not stack with them.  The target resists with Fortitude or Will defense (chosen when you take the effect)
-    </Description>
-    <Failure>
-      <One>
-        <Condition>Dazed</Condition>
-      </One>
-      <Two></Two>
-      <Three></Three>
-    </Failure>
-	</Power>
-	<Power>
-		<Name>Alternate Form</Name>
-		<Type>Varies</Type>
-		<Action>Varies</Action>
-		<Range>Varies</Range>
-		<Duration>Varies</Duration>
-		<Resistance></Resistance>
-		<Cost>See description</Cost>
-		<Description></Description>
-	</Power>
-	<Power>
-		<Name>Blast</Name>
-		<Type>Attack</Type>
-		<Action>Standard</Action>
-		<Range>Ranged</Range>
-		<Duration>Instant</Duration>
-		<Resistance>Toughness</Resistance>
-		<Cost>2</Cost>
-		<Description></Description>
+		<Resistance>Fort</Resistance>
+		<Resistance>Will</Resistance>
+		<Cost amount="1"></Cost>
+		<Description>You can impose some debilitating condition or conditions on a target by making a close attack. You set the conditions your Affliction causes at each degree when you acquire it and they may not be changed. Higher degree conditions replace lower degree conditions and do not stack with them.  The target resists with Fortitude or Will defense (chosen when you take the effect)</Description>
+		<Description>The target of an Affliction makes a resistance check at the end of each of his turns to remove first and second degree conditions. Third degree conditions require a minute of recovery time or outside aid, such as the Treatment skill or Healing effect (DC 10 + rank).</Description>
+		<Description>The exact nature and descriptors of the Affliction are up to you, chosen when you acquire the effect, with the GM’s approval; some examples are provided, but feel free to make up your own.</Description>
+		<Conditions>
+		  <One>
+			<Condition>Dazed</Condition>
+			<Condition>Entranced</Condition>
+			<Condition>Fatigued</Condition>
+			<Condition>Hindered</Condition>
+			<Condition>Impaired</Condition>
+			<Condition>Vulnerable</Condition>
+		  </One>
+		  <Two>
+			<Condition>Defenseless</Condition>
+			<Condition>Disabled</Condition>
+			<Condition>Exhausted</Condition>
+			<Condition>Immobile</Condition>
+			<Condition>Prone</Condition>
+			<Condition>Stunned</Condition>
+		  </Two>
+		  <Three>
+			<Condition>Asleep</Condition>
+			<Condition>Controlled</Condition>
+			<Condition>Incapacitated</Condition>
+			<Condition>Paralyzed</Condition>
+			<Condition>Transformed</Condition>
+			<Condition>Unaware</Condition>
+		  </Three>
+		</Conditions>
 	</Power>
 	<Power>
 		<Name>Burrowing</Name>
@@ -44,9 +44,8 @@
 		<Action>Free</Action>
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>1</Cost>
-		<Description></Description>
+		<Cost amount="1"></Cost>
+		<Description>You can burrow through the ground, leaving a tunnel behind if you choose. You move through soil and sand at a speed rank equal to your Burrowing rank, minus 5. So Burrowing 8, for example, lets you move through the ground at speed rank 3 (around 16 MPH). Burrowing through hard clay and packed earth reduces speed one additional rank. Burrowing through solid rock reduces it by two additional ranks. The tunnel you leave behind is either permanent or collapses behind you immediately (your choice when you begin burrowing each new tunnel).</Description>
 	</Power>
 	<Power>
 		<Name>Communication</Name>
@@ -54,9 +53,12 @@
 		<Action>Free</Action>
 		<Range>Rank</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>4</Cost>
-		<Description></Description>
+		<Cost amount="4"></Cost>
+		<Description>You can communicate over a distance using a medium other than your normal voice. Choose a sense type as your Communication medium. You may also use a special sense type (like neutrinos, gravitons, magical sendings, and so forth) noticeable only to an appropriate form of the Detect effect, at the GM’s discretion.</Description>
+		<Description>Communication is instantaneous with any subject within your range.</Description>
+		<Description>The recipient of your communication must be within range and have a means of receiving your transmission (super-sense, or a receiver of some sort; conscious awareness is all that’s needed to “receive” Mental Communication). You can receive Communication of the same medium as your own. Receivers can choose to ignore your Communication, if they wish. Communication is language-dependent; you and the subject must share a common language (see Comprehend to communicate across language barriers). Your Communication is point-to-point (sent to a single receiver within your range).</Description>
+		<Description>Activating your Communication effect is a free action. Communicating, however, takes the normal amount of time. You can apply the Rapid modifier to speed things up, provided your recipient is capable of receiving communication at that speed.</Description>
+		<Description>Others with an acute sense able to detect your Communication medium can “tap into” your transmissions with a Perception check (DC 10 + your Communication rank). The eavesdropper must be within normal sensory range of you or the receiver. With two degrees of success on the check, the eavesdropped can also understand your transmissions. Effects like Concealment and Dazzle that target your Communication medium can “jam” or block your transmissions.</Description>
 	</Power>
 	<Power>
 		<Name>Comprehend</Name>
@@ -64,8 +66,7 @@
 		<Action>None</Action>
 		<Range>Personal</Range>
 		<Duration>Permanent</Duration>
-		<Resistance></Resistance>
-		<Cost>2</Cost>
+		<Cost amount="2"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -74,8 +75,7 @@
 		<Action>Free</Action>
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>2</Cost>
+		<Cost amount="2"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -84,8 +84,7 @@
 		<Action>Standard</Action>
 		<Range>Ranged</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>2</Cost>
+		<Cost amount="2"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -95,7 +94,7 @@
 		<Range>Close</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Toughness</Resistance>
-		<Cost>1</Cost>
+		<Cost amount="1"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -105,7 +104,7 @@
 		<Range>Ranged</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Fort/Will</Resistance>
-		<Cost>2</Cost>
+		<Cost amount="2"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -114,8 +113,7 @@
 		<Action>Standard</Action>
 		<Range>Ranged</Range>
 		<Duration>Instant</Duration>
-		<Resistance></Resistance>
-		<Cost>1</Cost>
+		<Cost amount="1"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -124,8 +122,7 @@
 		<Action>Standard</Action>
 		<Range>Close</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>3</Cost>
+		<Cost amount="3"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -135,7 +132,7 @@
 		<Range>Perception</Range>
 		<Duration>Sustained</Duration>
 		<Resistance>Strength</Resistance>
-		<Cost>2</Cost>
+		<Cost amount="2"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -144,18 +141,7 @@
 		<Action>Free</Action>
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>1</Cost>
-		<Description></Description>
-	</Power>
-	<Power>
-		<Name>Energy Absorption</Name>
-		<Type>General</Type>
-		<Action>Free</Action>
-		<Range>Personal</Range>
-		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>See description</Cost>
+		<Cost amount="1"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -165,7 +151,7 @@
 		<Range>Close</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Toughness</Resistance>
-		<Cost>4</Cost>
+		<Cost amount="4"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -175,7 +161,7 @@
 		<Range>Ranged</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Toughness</Resistance>
-		<Cost>2</Cost>
+		<Cost amount="2"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -184,7 +170,6 @@
 		<Action>Free</Action>
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
 		<Cost>As base trait</Cost>
 		<Description></Description>
 	</Power>
@@ -194,8 +179,8 @@
 		<Action>Standard</Action>
 		<Range>Rank</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>1-2 per rank</Cost>
+		<Cost amount="1"></Cost>
+		<Cost amount="2"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -204,8 +189,7 @@
 		<Action>None</Action>
 		<Range>Personal</Range>
 		<Duration>Permanent</Duration>
-		<Resistance></Resistance>
-		<Cost>1</Cost>
+		<Cost amount="1"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -214,8 +198,7 @@
 		<Action>None</Action>
 		<Range>Personal</Range>
 		<Duration>Permanent</Duration>
-		<Resistance></Resistance>
-		<Cost>1</Cost>
+		<Cost amount="1"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -224,8 +207,7 @@
 		<Action>Free</Action>
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>2</Cost>
+		<Cost amount="2"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -234,8 +216,7 @@
 		<Action>Free</Action>
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>1</Cost>
+		<Cost amount="1"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -244,8 +225,7 @@
 		<Action>Free</Action>
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>2</Cost>
+		<Cost amount="2"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -254,8 +234,7 @@
 		<Action>Standard</Action>
 		<Range>Close</Range>
 		<Duration>Instant</Duration>
-		<Resistance></Resistance>
-		<Cost>2</Cost>
+		<Cost amount="2"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -265,8 +244,12 @@
 		<Range>Perception</Range>
 		<Duration>Sustained</Duration>
 		<Resistance>Awareness</Resistance>
-		<Cost>1-5 per rank</Cost>
-		<Description></Description>
+		<Cost amount="1">For 1 point per rank, you can create an illusion affecting a single sense type.</Cost>
+		<Cost amount="2">For 2 points per rank, you can affect two sense types.</Cost>
+		<Cost amount="3">For 3 points per rank, you can affect three sense types.</Cost>
+		<Cost amount="4">For 4 points per rank, you can affect four sense types.</Cost>
+		<Cost amount="5">For 5 points per rank, you can affect all sense types.</Cost>
+		<Description>You can control others’ senses to create false impressions, illusions. This can range from visual images to phantom sounds, smells, or even radar or mental images.</Description>
 	</Power>
 	<Power>
 		<Name>Immortality</Name>
@@ -274,8 +257,7 @@
 		<Action>None</Action>
 		<Range>Personal</Range>
 		<Duration>Permanent</Duration>
-		<Resistance></Resistance>
-		<Cost>2</Cost>
+		<Cost amount="2"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -284,8 +266,7 @@
 		<Action>None</Action>
 		<Range>Personal</Range>
 		<Duration>Permanent</Duration>
-		<Resistance></Resistance>
-		<Cost>1</Cost>
+		<Cost amount="1"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -294,18 +275,7 @@
 		<Action>Free</Action>
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>5</Cost>
-		<Description></Description>
-	</Power>
-	<Power>
-		<Name>Invisibility</Name>
-		<Type>Sensory</Type>
-		<Action>Free</Action>
-		<Range>Personal</Range>
-		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>4or 8 points</Cost>
+		<Cost amount="5"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -314,8 +284,7 @@
 		<Action>Free</Action>
 		<Range>Personal</Range>
 		<Duration>Instant</Duration>
-		<Resistance></Resistance>
-		<Cost>1</Cost>
+		<Cost amount="1"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -324,8 +293,7 @@
 		<Action>Reaction</Action>
 		<Range>Perception</Range>
 		<Duration>Instant</Duration>
-		<Resistance></Resistance>
-		<Cost>3</Cost>
+		<Cost amount="3"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -335,7 +303,7 @@
 		<Range>Ranged</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Toughness</Resistance>
-		<Cost>2</Cost>
+		<Cost amount="2"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -345,7 +313,7 @@
 		<Range>Perception</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Will</Resistance>
-		<Cost>4</Cost>
+		<Cost amount="4"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -354,8 +322,7 @@
 		<Action>Move</Action>
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>8</Cost>
+		<Cost amount="8"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -365,7 +332,7 @@
 		<Range>Perception</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Will</Resistance>
-		<Cost>4</Cost>
+		<Cost amount="4"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -375,7 +342,7 @@
 		<Range>Perception</Range>
 		<Duration>Sustained</Duration>
 		<Resistance>Will</Resistance>
-		<Cost>2</Cost>
+		<Cost amount="2"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -384,8 +351,7 @@
 		<Action>Free</Action>
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>5</Cost>
+		<Cost amount="5"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -395,7 +361,7 @@
 		<Range>Ranged</Range>
 		<Duration>Sustained</Duration>
 		<Resistance>Strength</Resistance>
-		<Cost>2</Cost>
+		<Cost amount="2"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -404,8 +370,7 @@
 		<Action>Free</Action>
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>2</Cost>
+		<Cost amount="2"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -415,7 +380,7 @@
 		<Range>Ranged</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Rank/Will</Resistance>
-		<Cost>1</Cost>
+		<Cost amount="1"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -424,8 +389,7 @@
 		<Action>Free</Action>
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>1</Cost>
+		<Cost amount="1"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -434,8 +398,7 @@
 		<Action>None</Action>
 		<Range>Personal</Range>
 		<Duration>Permanent</Duration>
-		<Resistance></Resistance>
-		<Cost>1</Cost>
+		<Cost amount="1"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -444,8 +407,7 @@
 		<Action>Free</Action>
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>1</Cost>
+		<Cost amount="1"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -454,8 +416,7 @@
 		<Action>None</Action>
 		<Range>Personal</Range>
 		<Duration>Permanent</Duration>
-		<Resistance></Resistance>
-		<Cost>1</Cost>
+		<Cost amount="1"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -464,9 +425,12 @@
 		<Action>Free</Action>
 		<Range>Rank</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>1-5 per rank</Cost>
-		<Description></Description>
+		<Cost amount="1"></Cost>
+		<Cost amount="2"></Cost>
+		<Cost amount="3"></Cost>
+		<Cost amount="4"></Cost>
+		<Cost amount="5"></Cost>
+		<Description>You can displace one or more of your senses over a distance, perceiving as if you were at that location, up to 60 feet away. Each additional rank increases your range one distance rank, so rank 2 is 120 feet, rank 3 is 250 feet, and so on. Remote Sensing overrides your normal sense(s) while you are using it. Subjects observed via Remote Sensing can “feel” it with an Insight check (DC 10 + rank).</Description>
 	</Power>
 	<Power>
 		<Name>Senses</Name>
@@ -474,8 +438,7 @@
 		<Action>None</Action>
 		<Range>Personal</Range>
 		<Duration>Permanent</Duration>
-		<Resistance></Resistance>
-		<Cost>1</Cost>
+		<Cost amount="1"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -484,8 +447,7 @@
 		<Action>Move</Action>
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>8</Cost>
+		<Cost amount="8"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -494,8 +456,7 @@
 		<Action>Free</Action>
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>2</Cost>
+		<Cost amount="2"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -505,7 +466,7 @@
 		<Range>Ranged</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Fortitude</Resistance>
-		<Cost>2</Cost>
+		<Cost amount="2"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -515,7 +476,7 @@
 		<Range>Ranged</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Dodge</Resistance>
-		<Cost>3</Cost>
+		<Cost amount="3"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -524,8 +485,7 @@
 		<Action>Free</Action>
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>1</Cost>
+		<Cost amount="1"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -535,7 +495,7 @@
 		<Range>Close</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Toughness</Resistance>
-		<Cost>1</Cost>
+		<Cost amount="1"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -545,7 +505,7 @@
 		<Range>Ranged</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Fortitude</Resistance>
-		<Cost>4</Cost>
+		<Cost amount="4"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -554,8 +514,7 @@
 		<Action>Standard</Action>
 		<Range>Close</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>2</Cost>
+		<Cost amount="2"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -564,8 +523,7 @@
 		<Action>Free</Action>
 		<Range>Personal</Range>
 		<Duration>See description</Duration>
-		<Resistance></Resistance>
-		<Cost>3</Cost>
+		<Cost amount="3"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -574,8 +532,7 @@
 		<Action>Free</Action>
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>1</Cost>
+		<Cost amount="1"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -584,8 +541,7 @@
 		<Action>Move</Action>
 		<Range>Rank</Range>
 		<Duration>Instant</Duration>
-		<Resistance></Resistance>
-		<Cost>2</Cost>
+		<Cost amount="2"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -594,18 +550,23 @@
 		<Action>Standard</Action>
 		<Range>Close</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>2-5 per rank</Cost>
-		<Description></Description>
+		<Cost amount="2">Transform one thing or substance into one other thing or substance, such as metal into wood, iron into glass, or broken objects into repaired ones.</Cost>
+		<Cost amount="3">Transform a broad group of things into a single result (any metal into gold, for example) or a single target into any of a broad group (one type of metal, such as lead, into any other metal, water into other liquids, and so forth).</Cost>
+		<Cost amount="4">Transform a broad group of targets into one of a broad group of results (solids into other solids, for example).</Cost>
+		<Cost amount="5">Transform any material into anything else.</Cost>
+		<Description>You can change objects into other objects, altering their shape or material composition in the process. You must touch the chosen object, which requires a close attack check if the object is held or worn by another character.</Description>
+		<Description>Inanimate objects do not make resistance checks and transform automatically, so long as you can affect their total mass. You can transform (Transform rank –6) rank mass, so Transform 1 can affect up to 1.5 lbs (mass rank –5), then 3 lbs. at rank 2, and so forth, on up to rank 20, which affects 400 tons at once.</Description>
+		<Description>The transformation lasts as a sustained effect. When you stop maintaining it, the target reverts to normal. Continuous Transform is irreversible except by using another Transform effect to turn the target back into its previous form.</Description>
+		<Description>Transforming someone’s devices or equipment requires targeting them first: characters can make Dodge resistance checks for their held or worn items, with a +5 circumstance bonus for hand-held and similar sized objects. So transforming a hand-held weapon like a gun requires an attack check and permits the wielder a Dodge resistance check with a +5 bonus (for a hand-held item). Targeting a worn suit of armor requires an attack check and allows the wearer a Dodge resistance check (with no modifier for a large item).</Description>
+		<Description>Transform is generally just another way of “removing” a device or equipment, considered a part of their discount in cost, although transformed items should eventually be restored or replaced.</Description>
 	</Power>
-	<Power>
 		<Name>Variable</Name>
+	<Power>
 		<Type>General</Type>
 		<Action>Standard</Action>
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
-		<Resistance></Resistance>
-		<Cost>7</Cost>
+		<Cost amount="7"></Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -615,7 +576,7 @@
 		<Range>Close</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Fort/Will</Resistance>
-		<Cost>1</Cost>
+		<Cost amount="1"></Cost>
 		<Description></Description>
 	</Power>
 </Powers>

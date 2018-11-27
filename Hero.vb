@@ -85,6 +85,7 @@
     Public StealthRanks As Integer
     Public TechnologyRanks As Integer
     Public TreatmentRanks As Integer
+    Public VehicleRanks As Integer
     Public AcrobaticsMisc As Integer
     Public AthleticsMisc As Integer
     Public CloseCombat1Misc As Integer
@@ -107,6 +108,7 @@
     Public StealthMisc As Integer
     Public TechnologyMisc As Integer
     Public TreatmentMisc As Integer
+    Public VehicleMisc As Integer
 
     Public Powers As New List(Of Power)
 
@@ -152,91 +154,95 @@
     End Function
 
     Public Function GetAcrobatics()
-        Return AcrobaticsRanks + AcrobaticsMisc
+        Return AcrobaticsRanks + AcrobaticsMisc + GetAgility()
     End Function
 
     Public Function GetAthletics()
-        Return AthleticsRanks + AthleticsMisc
+        Return AthleticsRanks + AthleticsMisc + GetStrength()
     End Function
 
     Public Function GetCloseCombat1()
-        Return CloseCombat1Ranks + CloseCombat1Misc
+        Return CloseCombat1Ranks + CloseCombat1Misc + GetFighting()
     End Function
 
     Public Function GetCloseCombat2()
-        Return CloseCombat2Ranks + CloseCombat2Misc
+        Return CloseCombat2Ranks + CloseCombat2Misc + GetFighting()
     End Function
 
     Public Function GetCloseCombat3()
-        Return CloseCombat3Ranks + CloseCombat3Misc
+        Return CloseCombat3Ranks + CloseCombat3Misc + GetFighting()
     End Function
 
     Public Function GetDeception()
-        Return DeceptionRanks + DeceptionMisc
+        Return DeceptionRanks + DeceptionMisc + GetPresence()
     End Function
 
     Public Function GetExpertise1()
-        Return Expertise1Ranks + Expertise1Misc
+        Return Expertise1Ranks + Expertise1Misc + GetIntellect()
     End Function
 
     Public Function GetExpertise2()
-        Return Expertise2Ranks + Expertise2Misc
+        Return Expertise2Ranks + Expertise2Misc + GetIntellect()
     End Function
 
     Public Function GetExpertise3()
-        Return Expertise3Ranks + Expertise3Misc
+        Return Expertise3Ranks + Expertise3Misc + GetIntellect()
     End Function
 
     Public Function GetExpertise4()
-        Return Expertise4Ranks + Expertise4Misc
+        Return Expertise4Ranks + Expertise4Misc + GetIntellect()
     End Function
 
     Public Function GetInsight()
-        Return InsightRanks + InsightMisc
+        Return InsightRanks + InsightMisc + GetAwareness()
     End Function
 
     Public Function GetIntimidation()
-        Return IntimidationRanks + IntimidationMisc
+        Return IntimidationRanks + IntimidationMisc + GetPresence()
     End Function
 
     Public Function GetInvestigation()
-        Return InvestigationRanks + InvestigationMisc
+        Return InvestigationRanks + InvestigationMisc + GetIntellect()
     End Function
 
     Public Function GetPerception()
-        Return PerceptionRanks + PerceptionMisc
+        Return PerceptionRanks + PerceptionMisc + GetAwareness()
     End Function
 
     Public Function GetPersuasion()
-        Return PersuasionRanks + PersuasionMisc
+        Return PersuasionRanks + PersuasionMisc + GetPresence()
     End Function
 
     Public Function GetRangedCombat1()
-        Return RangedCombat1Ranks + RangedCombat1Misc
+        Return RangedCombat1Ranks + RangedCombat1Misc + GetDexterity()
     End Function
 
     Public Function GetRangedCombat2()
-        Return RangedCombat2Ranks + RangedCombat2Misc
+        Return RangedCombat2Ranks + RangedCombat2Misc + GetDexterity()
     End Function
 
     Public Function GetRangedCombat3()
-        Return RangedCombat3Ranks + RangedCombat3Misc
+        Return RangedCombat3Ranks + RangedCombat3Misc + GetDexterity()
     End Function
 
     Public Function GetSlightOfHand()
-        Return SlightOfHandRanks + SlightOfHandMisc
+        Return SlightOfHandRanks + SlightOfHandMisc + GetDexterity()
     End Function
 
     Public Function GetStealth()
-        Return StealthRanks + StealthMisc
+        Return StealthRanks + StealthMisc + GetAgility()
     End Function
 
     Public Function GetTechnology()
-        Return TechnologyRanks + TechnologyMisc
+        Return TechnologyRanks + TechnologyMisc + GetIntellect()
     End Function
 
     Public Function GetTreatment()
-        Return TreatmentRanks + TreatmentMisc
+        Return TreatmentRanks + TreatmentMisc + GetIntellect()
+    End Function
+
+    Public Function GetVehicle()
+        Return VehicleRanks + VehicleMisc + GetDexterity()
     End Function
 
     Public Sub UpdatePoints()
@@ -247,7 +253,8 @@
         DefenceRanks = (DodgeRanks + ParryRanks + ToughnessRanks + FortitudeRanks + WillRanks)
 
         'SKills
-        SkillRanks = (AcrobaticsRanks + AthleticsRanks + CloseCombat1Ranks + CloseCombat2Ranks + CloseCombat3Ranks + DeceptionRanks + Expertise1Ranks + Expertise2Ranks + Expertise3Ranks + Expertise4Ranks)
+        SkillRanks = (AcrobaticsRanks + AthleticsRanks + CloseCombat1Ranks + CloseCombat2Ranks + CloseCombat3Ranks + DeceptionRanks + Expertise1Ranks + Expertise2Ranks + Expertise3Ranks + Expertise4Ranks + InsightRanks + IntimidationRanks + InvestigationRanks + PerceptionRanks + PersuasionRanks + RangedCombat1Ranks + RangedCombat2Ranks + RangedCombat3Ranks + SlightOfHandRanks + StealthRanks + TechnologyRanks + TreatmentRanks + VehicleRanks) / 2
+
         'Power Ranks
         For Each heropower In Powers
             PowerRanks = PowerRanks + (heropower.Cost * heropower.Ranks)
@@ -261,5 +268,46 @@
         Main.SkillsToolLabel.Text = "Skills: " + CStr(SkillRanks)
         Main.DefencesToolLabel.Text = "Defences: " + CStr(DefenceRanks)
         Main.TotalToolLabel.Text = "Total: " + CStr(TotalPowerPoints) + "/" + CStr(PowerPoints)
+
+        Main.StrLbl.Text = CStr(GetStrength())
+        Main.AgiLbl.Text = CStr(GetAgility())
+        Main.FgtLbl.Text = CStr(GetFighting())
+        Main.AweLbl.Text = CStr(GetAwareness())
+        Main.StaLbl.Text = CStr(GetStamina())
+        Main.DexLbl.Text = CStr(GetDexterity())
+        Main.IntLbl.Text = CStr(GetIntellect())
+        Main.PreLbl.Text = CStr(GetPresence())
+
+        Main.FortitudeLbl.Text = CStr(GetFortitude())
+        Main.ToughnessLbl.Text = CStr(GetToughness())
+        Main.WillLbl.Text = CStr(GetWill())
+        Main.ParryLbl.Text = CStr(GetParry())
+        Main.DodgeLbl.Text = CStr(GetDodge())
+
+
+        Main.AcrLbl.Text = CStr(GetAcrobatics())
+        Main.AthLbl.Text = CStr(GetAthletics())
+        Main.CCmb1Lbl.Text = CStr(GetCloseCombat1())
+        Main.CCmb2Lbl.Text = CStr(GetCloseCombat2())
+        Main.CCmb3Lbl.Text = CStr(GetCloseCombat3())
+        Main.DecLbl.Text = CStr(GetDeception())
+        Main.Exp1Lbl.Text = CStr(GetExpertise1())
+        Main.Exp2Lbl.Text = CStr(GetExpertise2())
+        Main.Exp3Lbl.Text = CStr(GetExpertise3())
+        Main.Exp4Lbl.Text = CStr(GetExpertise4())
+        Main.InsLbl.Text = CStr(GetInsight())
+        Main.IntLbl.Text = CStr(GetIntimidation())
+        Main.InvLbl.Text = CStr(GetInvestigation())
+        Main.PercLbl.Text = CStr(GetPerception())
+        Main.Perslbl.Text = CStr(GetPersuasion())
+        Main.RCmb1Lbl.Text = CStr(GetRangedCombat1())
+        Main.RCmb2Lbl.Text = CStr(GetRangedCombat2())
+        Main.RCmb3Lbl.Text = CStr(GetRangedCombat3())
+        Main.SoHLbl.Text = CStr(GetSlightOfHand())
+        Main.SteLbl.Text = CStr(GetStealth())
+        Main.TechLbl.Text = CStr(GetTechnology())
+        Main.TreLbl.Text = CStr(GetTreatment())
+        Main.VehLbl.Text = CStr(GetVehicle())
+
     End Sub
 End Class
