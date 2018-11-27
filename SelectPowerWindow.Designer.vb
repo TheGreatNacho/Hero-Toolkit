@@ -26,9 +26,9 @@ Partial Class SelectPowerWindow
         Me.PowerList = New System.Windows.Forms.ListBox()
         Me.SearchPower = New System.Windows.Forms.TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -72,6 +72,16 @@ Partial Class SelectPowerWindow
         Me.Panel2.Size = New System.Drawing.Size(360, 36)
         Me.Panel2.TabIndex = 1
         '
+        'Button2
+        '
+        Me.Button2.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button2.Location = New System.Drawing.Point(214, 0)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(146, 36)
+        Me.Button2.TabIndex = 1
+        Me.Button2.Text = "Close"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Button1
         '
         Me.Button1.Dock = System.Windows.Forms.DockStyle.Left
@@ -79,7 +89,7 @@ Partial Class SelectPowerWindow
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(157, 36)
         Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Add"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'RichTextBox1
@@ -91,16 +101,6 @@ Partial Class SelectPowerWindow
         Me.RichTextBox1.Size = New System.Drawing.Size(360, 687)
         Me.RichTextBox1.TabIndex = 2
         Me.RichTextBox1.Text = ""
-        '
-        'Button2
-        '
-        Me.Button2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button2.Location = New System.Drawing.Point(214, 0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(146, 36)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'SelectPowerWindow
         '

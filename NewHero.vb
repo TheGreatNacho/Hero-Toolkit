@@ -29,7 +29,7 @@
     End Sub
 
     Private Sub OkayBtn_Click(sender As Object, e As EventArgs) Handles OkayBtn.Click
-        Main.WorkingHero = New Hero
+        Main.WorkingHero.ClearHero()
         Main.WorkingHero.Name = NewHeroName.Text
         Main.WorkingHero.Player = PlayerName.Text
         If (HeroType.SelectedIndex = 0) Then
@@ -48,8 +48,7 @@
             Case 2
                 Main.WorkingHero.Type = Hero.HeroType.Normal
         End Select
-
-        Main.RefreshWorkingHero()
+        Main.WorkingHero.BasicsNumberboxes()
         Main.WorkingHero.UpdatePoints()
         Me.Close()
     End Sub

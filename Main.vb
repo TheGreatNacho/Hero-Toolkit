@@ -5,30 +5,6 @@ Public Class Main
     Public WorkingHero As New Hero
     Public powers As New List(Of Power)
 
-    Public Sub RefreshWorkingHero()
-        'Loading all the data from WorkingHero
-        HeroNameTextBox.Text = WorkingHero.Name
-        PlayerNameTextBox.Text = WorkingHero.Player
-        IdentityTextBox.Text = WorkingHero.Identity
-        GenderTextBox.Text = WorkingHero.Gender
-        SecretIdentityChkBox.Checked = WorkingHero.Secret
-        AgeTextBox.Text = WorkingHero.Age
-        HeightTextBox.Text = WorkingHero.Height
-        WeightTextBox.Text = WorkingHero.Weight
-        EyesTextBox.Text = WorkingHero.Eyes
-        HairTextBox.Text = WorkingHero.Hair
-        GroupAffiliationsTextBox.Text = WorkingHero.GroupAffiliation
-        BOOTextBox.Text = WorkingHero.BaseOfOpperations
-
-        'A hero was loaded/created, so give access to stuff
-        TabPanel.Enabled = True
-        AbilitiesToolLabel.Visible = True
-        PowersToolLabel.Visible = True
-        AdvantagesToolLabel.Visible = True
-        SkillsToolLabel.Visible = True
-        DefencesToolLabel.Visible = True
-        TotalToolLabel.Visible = True
-    End Sub
     Private Sub LoadPowers()
         Dim powerXML As XDocument = XDocument.Load(Application.StartupPath & "\Powers.xml")
         For Each power In From element In powerXML.<Powers>.<Power>
@@ -249,120 +225,115 @@ Public Class Main
     End Sub
 
     Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
-        SaveHeroDialog.Filter = "Hero File|*.hero"
-        SaveHeroDialog.Title = "Save Hero"
-        SaveHeroDialog.ShowDialog()
+        If (SaveHeroDialog.FileName.Length > 0) Then
+            WorkingHero.SaveHero(SaveHeroDialog.FileName)
+        Else
+            SaveHeroDialog.Filter = "Hero File|*.hero"
+            SaveHeroDialog.Title = "Save Hero"
+            SaveHeroDialog.ShowDialog()
+        End If
     End Sub
 
     Private Sub SaveHeroDialog_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles SaveHeroDialog.FileOk
-        Dim fs As New FileStream(SaveHeroDialog.FileName, FileMode.OpenOrCreate)
-        Dim bw As New BinaryWriter(fs)
+        WorkingHero.SaveHero(SaveHeroDialog.FileName)
+    End Sub
 
-        bw.Write(WorkingHero.Age)
-        bw.Write(WorkingHero.NPC)
-        bw.Write(WorkingHero.Eyes)
-        bw.Write(WorkingHero.Hair)
-        bw.Write(WorkingHero.Name)
-        'bw.Write(WorkingHero.Type)
-        bw.Write(WorkingHero.Player)
-        bw.Write(WorkingHero.Gender)
-        bw.Write(WorkingHero.Height)
-        bw.Write(WorkingHero.Weight)
-        bw.Write(WorkingHero.Identity)
-        bw.Write(WorkingHero.Secret)
-        bw.Write(WorkingHero.GroupAffiliation)
-        bw.Write(WorkingHero.BaseOfOpperations)
+    Private Sub OpenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenToolStripMenuItem.Click
+        OpenHeroDialog.Filter = "Hero File|*.hero"
+        OpenHeroDialog.Title = "Open Hero"
+        OpenHeroDialog.ShowDialog()
+    End Sub
 
-        'Power Points
-        bw.Write(WorkingHero.PowerLevel)
-        bw.Write(WorkingHero.PowerPoints)
-        bw.Write(WorkingHero.PowerPointPerLevel)
-        bw.Write(WorkingHero.AbilityRanks)
-        bw.Write(WorkingHero.PowerRanks)
-        bw.Write(WorkingHero.SkillRanks)
-        bw.Write(WorkingHero.AdvantageRanks)
-        bw.Write(WorkingHero.DefenceRanks)
-        bw.Write(WorkingHero.TotalPowerPoints)
+    Private Sub OpenHeroDialog_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenHeroDialog.FileOk
+        WorkingHero.LoadHero(OpenHeroDialog.FileName)
+        TabPanel.Enabled = True
+    End Sub
 
-        'Abilitiees
-        bw.Write(WorkingHero.StrengthRanks)
-        bw.Write(WorkingHero.StrengthMisc)
-        bw.Write(WorkingHero.AgilityRanks)
-        bw.Write(WorkingHero.AgilityMisc)
-        bw.Write(WorkingHero.FightingRanks)
-        bw.Write(WorkingHero.FightingMisc)
-        bw.Write(WorkingHero.AwarenessRanks)
-        bw.Write(WorkingHero.AwarenessMisc)
-        bw.Write(WorkingHero.StaminaRanks)
-        bw.Write(WorkingHero.StaminaMisc)
-        bw.Write(WorkingHero.DexterityRanks)
-        bw.Write(WorkingHero.DexterityMisc)
-        bw.Write(WorkingHero.IntellectRanks)
-        bw.Write(WorkingHero.IntellectMisc)
-        bw.Write(WorkingHero.PresenceRanks)
-        bw.Write(WorkingHero.PresenceMisc)
+    Private Sub HeroNameTextBox_TextChanged(sender As Object, e As EventArgs) Handles HeroNameTextBox.TextChanged
+        WorkingHero.Name = HeroNameTextBox.Text
+    End Sub
 
-        'Defence
-        bw.Write(WorkingHero.DodgeRanks)
-        bw.Write(WorkingHero.DodgeMisc)
-        bw.Write(WorkingHero.ParryRanks)
-        bw.Write(WorkingHero.ParryMisc)
-        bw.Write(WorkingHero.FortitudeRanks)
-        bw.Write(WorkingHero.FortitudeMisc)
-        bw.Write(WorkingHero.ToughnessRanks)
-        bw.Write(WorkingHero.ToughnessMisc)
-        bw.Write(WorkingHero.WillRanks)
-        bw.Write(WorkingHero.WillMisc)
+    Private Sub PlayerNameTextBox_TextChanged(sender As Object, e As EventArgs) Handles PlayerNameTextBox.TextChanged
+        WorkingHero.Player = PlayerNameTextBox.Text
+    End Sub
 
-        'Skills
-        bw.Write(WorkingHero.AcrobaticsRanks)
-        bw.Write(WorkingHero.AthleticsRanks)
-        bw.Write(WorkingHero.CloseCombat1Ranks)
-        bw.Write(WorkingHero.CloseCombat2Ranks)
-        bw.Write(WorkingHero.CloseCombat3Ranks)
-        bw.Write(WorkingHero.DeceptionRanks)
-        bw.Write(WorkingHero.Expertise1Ranks)
-        bw.Write(WorkingHero.Expertise2Ranks)
-        bw.Write(WorkingHero.Expertise3Ranks)
-        bw.Write(WorkingHero.Expertise4Ranks)
-        bw.Write(WorkingHero.InsightRanks)
-        bw.Write(WorkingHero.IntimidationRanks)
-        bw.Write(WorkingHero.InvestigationRanks)
-        bw.Write(WorkingHero.PerceptionRanks)
-        bw.Write(WorkingHero.PersuasionRanks)
-        bw.Write(WorkingHero.RangedCombat1Ranks)
-        bw.Write(WorkingHero.RangedCombat2Ranks)
-        bw.Write(WorkingHero.RangedCombat3Ranks)
-        bw.Write(WorkingHero.SlightOfHandRanks)
-        bw.Write(WorkingHero.StealthRanks)
-        bw.Write(WorkingHero.TechnologyRanks)
-        bw.Write(WorkingHero.TreatmentRanks)
-        bw.Write(WorkingHero.VehicleRanks)
-        bw.Write(WorkingHero.AcrobaticsMisc)
-        bw.Write(WorkingHero.AthleticsMisc)
-        bw.Write(WorkingHero.CloseCombat1Misc)
-        bw.Write(WorkingHero.CloseCombat2Misc)
-        bw.Write(WorkingHero.CloseCombat3Misc)
-        bw.Write(WorkingHero.DeceptionMisc)
-        bw.Write(WorkingHero.Expertise1Misc)
-        bw.Write(WorkingHero.Expertise2Misc)
-        bw.Write(WorkingHero.Expertise3Misc)
-        bw.Write(WorkingHero.Expertise4Misc)
-        bw.Write(WorkingHero.InsightMisc)
-        bw.Write(WorkingHero.IntimidationMisc)
-        bw.Write(WorkingHero.InvestigationMisc)
-        bw.Write(WorkingHero.PerceptionMisc)
-        bw.Write(WorkingHero.PersuasionMisc)
-        bw.Write(WorkingHero.RangedCombat1Misc)
-        bw.Write(WorkingHero.RangedCombat2Misc)
-        bw.Write(WorkingHero.RangedCombat3Misc)
-        bw.Write(WorkingHero.SlightOfHandMisc)
-        bw.Write(WorkingHero.StealthMisc)
-        bw.Write(WorkingHero.TechnologyMisc)
-        bw.Write(WorkingHero.TreatmentMisc)
-        bw.Write(WorkingHero.VehicleMisc)
+    Private Sub IdentityTextBox_TextChanged(sender As Object, e As EventArgs) Handles IdentityTextBox.TextChanged
+        WorkingHero.Identity = IdentityTextBox.Text
+    End Sub
 
-        bw.Close()
-        fs.Close()
+    Private Sub GenderTextBox_TextChanged(sender As Object, e As EventArgs) Handles GenderTextBox.TextChanged
+        WorkingHero.Gender = GenderTextBox.Text
+    End Sub
+
+    Private Sub SecretIdentityChkBox_CheckedChanged(sender As Object, e As EventArgs) Handles SecretIdentityChkBox.CheckedChanged
+        WorkingHero.Secret = SecretIdentityChkBox.Checked
+    End Sub
+
+    Private Sub AgeTextBox_TextChanged(sender As Object, e As EventArgs) Handles AgeTextBox.TextChanged
+        WorkingHero.Age = AgeTextBox.Text
+    End Sub
+
+    Private Sub HeightTextBox_TextChanged(sender As Object, e As EventArgs) Handles HeightTextBox.TextChanged
+        WorkingHero.Height = HeightTextBox.Text
+    End Sub
+
+    Private Sub WeightTextBox_TextChanged(sender As Object, e As EventArgs) Handles WeightTextBox.TextChanged
+        WorkingHero.Weight = WeightTextBox.Text
+    End Sub
+
+    Private Sub EyesTextBox_TextChanged(sender As Object, e As EventArgs) Handles EyesTextBox.TextChanged
+        WorkingHero.Eyes = EyesTextBox.Text
+    End Sub
+
+    Private Sub HairTextBox_TextChanged(sender As Object, e As EventArgs) Handles HairTextBox.TextChanged
+        WorkingHero.Hair = HairTextBox.Text
+    End Sub
+
+    Private Sub GroupAffiliationsTextBox_TextChanged(sender As Object, e As EventArgs) Handles GroupAffiliationsTextBox.TextChanged
+        WorkingHero.GroupAffiliation = GroupAffiliationsTextBox.Text
+    End Sub
+
+    Private Sub BOOTextBox_TextChanged(sender As Object, e As EventArgs) Handles BOOTextBox.TextChanged
+        WorkingHero.BaseOfOpperations = BOOTextBox.Text
+    End Sub
+
+    Private Sub CloseCombat1_TextChanged(sender As Object, e As EventArgs) Handles CloseCombat1.TextChanged
+        WorkingHero.CloseCombat1Name = CloseCombat1.Text
+    End Sub
+
+    Private Sub CloseCombat2_TextChanged(sender As Object, e As EventArgs) Handles CloseCombat2.TextChanged
+        WorkingHero.CloseCombat2Name = CloseCombat2.Text
+    End Sub
+
+    Private Sub CloseCombat3_TextChanged(sender As Object, e As EventArgs) Handles CloseCombat3.TextChanged
+        WorkingHero.CloseCombat3Name = CloseCombat3.Text
+    End Sub
+
+    Private Sub Expertise1_TextChanged(sender As Object, e As EventArgs) Handles Expertise1.TextChanged
+        WorkingHero.Expertise1Name = Expertise1.Text
+    End Sub
+
+    Private Sub Expertise2_TextChanged(sender As Object, e As EventArgs) Handles Expertise2.TextChanged
+        WorkingHero.Expertise2Name = Expertise2.Text
+    End Sub
+
+    Private Sub Expertise3_TextChanged(sender As Object, e As EventArgs) Handles Expertise3.TextChanged
+        WorkingHero.Expertise2Name = Expertise3.Text
+    End Sub
+
+    Private Sub Expertise4_TextChanged(sender As Object, e As EventArgs) Handles Expertise4.TextChanged
+        WorkingHero.Expertise2Name = Expertise4.Text
+    End Sub
+
+    Private Sub RangedCombat1_TextChanged(sender As Object, e As EventArgs) Handles RangedCombat1.TextChanged
+        WorkingHero.RangedCombat1Name = RangedCombat1.Text
+    End Sub
+
+    Private Sub RangedCombat2_TextChanged(sender As Object, e As EventArgs) Handles RangedCombat2.TextChanged
+        WorkingHero.RangedCombat2Name = RangedCombat2.Text
+    End Sub
+
+    Private Sub RangedCombat3_TextChanged(sender As Object, e As EventArgs) Handles RangedCombat3.TextChanged
+        WorkingHero.RangedCombat3Name = RangedCombat3.Text
     End Sub
 End Class

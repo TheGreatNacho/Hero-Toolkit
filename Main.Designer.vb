@@ -209,6 +209,7 @@ Partial Class Main
         Me.BootTool = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.SaveHeroDialog = New System.Windows.Forms.SaveFileDialog()
+        Me.OpenHeroDialog = New System.Windows.Forms.OpenFileDialog()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.PowersTab.SuspendLayout()
@@ -297,7 +298,7 @@ Partial Class Main
         'OpenToolStripMenuItem
         '
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.OpenToolStripMenuItem.Text = "Open"
         '
         'SaveToolStripMenuItem
@@ -2290,6 +2291,9 @@ Partial Class Main
         '
         Me.SaveHeroDialog.DefaultExt = "hero"
         '
+        'OpenHeroDialog
+        '
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2547,4 +2551,5 @@ Partial Class Main
     Friend WithEvents TreNumBox As NumericUpDown
     Friend WithEvents VehNumBox As NumericUpDown
     Friend WithEvents SaveHeroDialog As SaveFileDialog
+    Friend WithEvents OpenHeroDialog As OpenFileDialog
 End Class
