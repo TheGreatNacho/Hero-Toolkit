@@ -24,3 +24,4 @@ C:\Users\TheGreatNacho\source\repos\Hero-Toolkit\obj\Release\Hero Toolkit.vbproj
 C:\Users\TheGreatNacho\source\repos\Hero-Toolkit\obj\Release\Hero Toolkit.exe
 C:\Users\TheGreatNacho\source\repos\Hero-Toolkit\obj\Release\Hero Toolkit.xml
 C:\Users\TheGreatNacho\source\repos\Hero-Toolkit\obj\Release\Hero Toolkit.pdb
+C:\Users\TheGreatNacho\source\repos\Hero-Toolkit\obj\Release\Hero_Toolkit.NewHero.resources

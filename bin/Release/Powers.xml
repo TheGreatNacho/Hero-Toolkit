@@ -6,7 +6,7 @@
 		<Range>Close</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Fort/Will</Resistance>
-		<Cost>1 per rank</Cost>
+		<Cost>1</Cost>
 		<Description>
       You can impose some debilitating condition or conditions on a target by making a close attack. You set the conditions your Affliction causes at each degree when you acquire it and they may not be changed. Higher degree conditions replace lower degree conditions and do not stack with them.  The target resists with Fortitude or Will defense (chosen when you take the effect)
     </Description>
@@ -35,7 +35,7 @@
 		<Range>Ranged</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Toughness</Resistance>
-		<Cost>2 per rank</Cost>
+		<Cost>2</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -45,7 +45,7 @@
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
 		<Resistance></Resistance>
-		<Cost>1 per rank</Cost>
+		<Cost>1</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -55,7 +55,7 @@
 		<Range>Rank</Range>
 		<Duration>Sustained</Duration>
 		<Resistance></Resistance>
-		<Cost>4 per rank</Cost>
+		<Cost>4</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -65,7 +65,7 @@
 		<Range>Personal</Range>
 		<Duration>Permanent</Duration>
 		<Resistance></Resistance>
-		<Cost>2 per rank</Cost>
+		<Cost>2</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -75,7 +75,7 @@
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
 		<Resistance></Resistance>
-		<Cost>2 per rank</Cost>
+		<Cost>2</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -85,7 +85,7 @@
 		<Range>Ranged</Range>
 		<Duration>Sustained</Duration>
 		<Resistance></Resistance>
-		<Cost>2 per rank</Cost>
+		<Cost>2</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -95,7 +95,7 @@
 		<Range>Close</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Toughness</Resistance>
-		<Cost>1 per rank</Cost>
+		<Cost>1</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -105,7 +105,7 @@
 		<Range>Ranged</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Fort/Will</Resistance>
-		<Cost>2 per rank</Cost>
+		<Cost>2</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -115,7 +115,7 @@
 		<Range>Ranged</Range>
 		<Duration>Instant</Duration>
 		<Resistance></Resistance>
-		<Cost>1 per rank</Cost>
+		<Cost>1</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -125,7 +125,7 @@
 		<Range>Close</Range>
 		<Duration>Sustained</Duration>
 		<Resistance></Resistance>
-		<Cost>3per rank</Cost>
+		<Cost>3</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -135,7 +135,7 @@
 		<Range>Perception</Range>
 		<Duration>Sustained</Duration>
 		<Resistance>Strength</Resistance>
-		<Cost>2 per rank</Cost>
+		<Cost>2</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -145,7 +145,7 @@
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
 		<Resistance></Resistance>
-		<Cost>1 per rank</Cost>
+		<Cost>1</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -165,7 +165,7 @@
 		<Range>Close</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Toughness</Resistance>
-		<Cost>4 per rank</Cost>
+		<Cost>4</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -175,7 +175,7 @@
 		<Range>Ranged</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Toughness</Resistance>
-		<Cost>2 per rank</Cost>
+		<Cost>2</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -205,7 +205,7 @@
 		<Range>Personal</Range>
 		<Duration>Permanent</Duration>
 		<Resistance></Resistance>
-		<Cost>1 per rank</Cost>
+		<Cost>1</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -215,7 +215,7 @@
 		<Range>Personal</Range>
 		<Duration>Permanent</Duration>
 		<Resistance></Resistance>
-		<Cost>1 per rank</Cost>
+		<Cost>1</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -225,7 +225,7 @@
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
 		<Resistance></Resistance>
-		<Cost>2 per rank</Cost>
+		<Cost>2</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -235,7 +235,7 @@
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
 		<Resistance></Resistance>
-		<Cost>1per rank</Cost>
+		<Cost>1</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -245,7 +245,7 @@
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
 		<Resistance></Resistance>
-		<Cost>2 per rank</Cost>
+		<Cost>2</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -255,7 +255,7 @@
 		<Range>Close</Range>
 		<Duration>Instant</Duration>
 		<Resistance></Resistance>
-		<Cost>2 per rank</Cost>
+		<Cost>2</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -275,7 +275,7 @@
 		<Range>Personal</Range>
 		<Duration>Permanent</Duration>
 		<Resistance></Resistance>
-		<Cost>2 per rank</Cost>
+		<Cost>2</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -285,7 +285,7 @@
 		<Range>Personal</Range>
 		<Duration>Permanent</Duration>
 		<Resistance></Resistance>
-		<Cost>1 per rank</Cost>
+		<Cost>1</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -295,7 +295,7 @@
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
 		<Resistance></Resistance>
-		<Cost>5 per rank</Cost>
+		<Cost>5</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -315,7 +315,7 @@
 		<Range>Personal</Range>
 		<Duration>Instant</Duration>
 		<Resistance></Resistance>
-		<Cost>1 per rank</Cost>
+		<Cost>1</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -325,7 +325,7 @@
 		<Range>Perception</Range>
 		<Duration>Instant</Duration>
 		<Resistance></Resistance>
-		<Cost>3 per rank</Cost>
+		<Cost>3</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -335,7 +335,7 @@
 		<Range>Ranged</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Toughness</Resistance>
-		<Cost>2 per rank</Cost>
+		<Cost>2</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -345,7 +345,7 @@
 		<Range>Perception</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Will</Resistance>
-		<Cost>4 per rank</Cost>
+		<Cost>4</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -355,7 +355,7 @@
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
 		<Resistance></Resistance>
-		<Cost>8per rank</Cost>
+		<Cost>8</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -365,7 +365,7 @@
 		<Range>Perception</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Will</Resistance>
-		<Cost>4 per rank</Cost>
+		<Cost>4</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -375,7 +375,7 @@
 		<Range>Perception</Range>
 		<Duration>Sustained</Duration>
 		<Resistance>Will</Resistance>
-		<Cost>2 per rank</Cost>
+		<Cost>2</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -385,7 +385,7 @@
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
 		<Resistance></Resistance>
-		<Cost>5 per rank</Cost>
+		<Cost>5</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -395,7 +395,7 @@
 		<Range>Ranged</Range>
 		<Duration>Sustained</Duration>
 		<Resistance>Strength</Resistance>
-		<Cost>2 per rank</Cost>
+		<Cost>2</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -405,7 +405,7 @@
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
 		<Resistance></Resistance>
-		<Cost>2 per rank</Cost>
+		<Cost>2</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -415,7 +415,7 @@
 		<Range>Ranged</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Rank/Will</Resistance>
-		<Cost>1 per rank</Cost>
+		<Cost>1</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -425,7 +425,7 @@
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
 		<Resistance></Resistance>
-		<Cost>1per rank</Cost>
+		<Cost>1</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -435,7 +435,7 @@
 		<Range>Personal</Range>
 		<Duration>Permanent</Duration>
 		<Resistance></Resistance>
-		<Cost>1 per rank</Cost>
+		<Cost>1</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -445,7 +445,7 @@
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
 		<Resistance></Resistance>
-		<Cost>1 per rank</Cost>
+		<Cost>1</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -455,7 +455,7 @@
 		<Range>Personal</Range>
 		<Duration>Permanent</Duration>
 		<Resistance></Resistance>
-		<Cost>1 per rank</Cost>
+		<Cost>1</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -475,7 +475,7 @@
 		<Range>Personal</Range>
 		<Duration>Permanent</Duration>
 		<Resistance></Resistance>
-		<Cost>1 per rank</Cost>
+		<Cost>1</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -485,7 +485,7 @@
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
 		<Resistance></Resistance>
-		<Cost>8per rank</Cost>
+		<Cost>8</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -495,7 +495,7 @@
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
 		<Resistance></Resistance>
-		<Cost>2 per rank</Cost>
+		<Cost>2</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -505,7 +505,7 @@
 		<Range>Ranged</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Fortitude</Resistance>
-		<Cost>2 per rank</Cost>
+		<Cost>2</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -515,7 +515,7 @@
 		<Range>Ranged</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Dodge</Resistance>
-		<Cost>3 per rank</Cost>
+		<Cost>3</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -525,7 +525,7 @@
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
 		<Resistance></Resistance>
-		<Cost>1 per rank</Cost>
+		<Cost>1</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -535,7 +535,7 @@
 		<Range>Close</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Toughness</Resistance>
-		<Cost>1 per rank</Cost>
+		<Cost>1</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -545,7 +545,7 @@
 		<Range>Ranged</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Fortitude</Resistance>
-		<Cost>4 per rank</Cost>
+		<Cost>4</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -555,7 +555,7 @@
 		<Range>Close</Range>
 		<Duration>Sustained</Duration>
 		<Resistance></Resistance>
-		<Cost>2 per rank</Cost>
+		<Cost>2</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -565,7 +565,7 @@
 		<Range>Personal</Range>
 		<Duration>See description</Duration>
 		<Resistance></Resistance>
-		<Cost>3per rank</Cost>
+		<Cost>3</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -575,7 +575,7 @@
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
 		<Resistance></Resistance>
-		<Cost>1 per rank</Cost>
+		<Cost>1</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -585,7 +585,7 @@
 		<Range>Rank</Range>
 		<Duration>Instant</Duration>
 		<Resistance></Resistance>
-		<Cost>2 per rank</Cost>
+		<Cost>2</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -605,7 +605,7 @@
 		<Range>Personal</Range>
 		<Duration>Sustained</Duration>
 		<Resistance></Resistance>
-		<Cost>7 per rank</Cost>
+		<Cost>7</Cost>
 		<Description></Description>
 	</Power>
 	<Power>
@@ -615,7 +615,7 @@
 		<Range>Close</Range>
 		<Duration>Instant</Duration>
 		<Resistance>Fort/Will</Resistance>
-		<Cost>1 per rank</Cost>
+		<Cost>1</Cost>
 		<Description></Description>
 	</Power>
 </Powers>
